@@ -11,16 +11,16 @@ for (i = 0; i <= 10; i++) {
 
 	//changes articles into arrays
 }
-function translateNumb(rowNr,cellNr) {
+function translateNumb(rowNr,columnNr) {
   rNr = rowNr;
-  cNr = cellNr;
-  document.getElementById("display").innerHTML = "rowNr is " + rNr + "<br> cellNr is " + cNr;
+  cNr = columnNr;
+  document.getElementById("display").innerHTML = "rowNr is " + rNr + "<br> columnNr is " + cNr;
   changeStyle()
 }
 function changeStyle() {
   contentArray[rNr][cNr] = 1;
   var temp = "row";
-  var temp2 = "_cell";
+  var temp2 = "_column";
   var temp3 = temp + rNr + temp2 + cNr;
   document.getElementById("display").innerHTML += "<br>"+ temp3
 
